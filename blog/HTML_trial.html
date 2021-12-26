@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>
+            HTML 表单1
+        </title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </head>
+    <body>
+		<h3>请填写您的个人信息</h3>
+		<p>
+		姓名：<input type="text" name ="name" />
+		<br /><br />  <!-- 换行-->
+		性别：<input type="radio" name ="gender" value="male" />男
+				<input type="radio" name ="gender" value="female" />女
+		<br /><br />
+		出生年份：<select name="year">
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+					</select>
+		<br /><br />
+		设置您的账户名：<input type="text" name ="username" />
+		<br /><br />
+		设置您的密码：<input type="password" name ="password" />
+		<br /><br />
+		您的人生理想或目标是什么？<br />
+		<textarea name ="goal"></textarea>
+		<br /><br />
+		哪个方式可以联系到您？
+		电话<input type="checkbox" name="contact" value="phone" />
+		电子邮件<input type="checkbox" name="contact" value="email" />
+		<br /><br />
+		上传您的最近个人照片：<input type="file" name="image"/>
+		<br /><br />
+		<input type="submit" name="submit" value="确认并提交" />
+		</p>
+    </body>
+</html>
