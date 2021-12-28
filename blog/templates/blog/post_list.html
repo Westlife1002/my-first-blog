@@ -30,10 +30,27 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </article>
         {% endfor %}
+    <br>
+    <br>
+    <hr>
+    <br>
+        <form method="POST" action="" target="iframe">
+        {% csrf_token %}
+        <div>
+          <label>num_1:</label>
+          <input type="text" name="num_1" value="" placeholder="Enter value" />
+        </div>
+        <div>
+          <label>num_2:</label>
+          <input type="text" name="num_2" value="" placeholder="Enter value" />
+        </div>
+        <br />
+        <div>{{ result }}</div>
+        <button type="submit">Submit</button>
+        </form>
 
-        <!--<form action="#" method="get">-->
-          <!--<input type="text" value="8" name="mytextbox" size="1"/>-->
-          <!--<input type="submit" class="btn" value="Click" name="mybtn">-->
-        <!--</form>-->
+        <!--<iframe id="iframe" name="iframe" style="display:none;"></iframe>-->
+
+    <br>
     </body>
 </html>
